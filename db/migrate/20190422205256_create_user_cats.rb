@@ -3,9 +3,9 @@ class CreateUserCats < ActiveRecord::Migration[5.2]
     create_table :user_cats do |t|
       t.references :user, foreign_key: true
       t.string :category
-      t.int :totalqcount
-      t.int :correct
-      t.int :streak
+      t.integer :totalqcount
+      t.integer :correct
+      t.integer :streak
 
       t.timestamps
     end
